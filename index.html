@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="container1">
+        <img class="logo-zonder-tekst" src="afbeeldingen/jamaah-logo-zonder-tekst-goed.png" alt="logo">
+        <h1 class="Welkomsbericht">Welkom Bij Jama'ah</h1>
+        <p class="welkom-beschr"> Jouw tool voor het inschrijven en plannen van <br>
+             islamitische evenementen, altijd bij de hand.</p>
+            
+    </div>
+
+    <div class="container-login">
+        <h1 class="Begin-nu">Begin Nu</h1>
+        <p class="login-beschr">Begin nu met het aanmaken van je account en start met het plannen van evenementen.</p>
+
+  
+        <button id="google-login" class="login-google">
+            <img class="google-logo" src="afbeeldingen/icons8-google-48.png" alt="logo-google">
+            <span class="google-login-beschr">Maak een account met Google</span>
+        </button>
+    
+        <button class="Login-email">
+            <img class="e-mail-logo" src="afbeeldingen/image-removebg-preview (12).png" alt="logo-email">
+            <span class="e-mail-login-beschr">Maak een account met E-Mail</span>
+        </button>
+    
+    </div>
+    
+   <!-- Firebase SDKs toevoegen -->
+   <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js" type="module"></script>
+   <script src="https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js" type="module"></script>
+   <!-- Voeg je eigen script toe met type="module" -->
+   <script src="login.js" type="module"></script>
+   
+   
+
+</body>
+</html>

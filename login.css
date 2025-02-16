@@ -1,0 +1,152 @@
+.body {
+    background-color: #EFF1ED;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.logo-zonder-tekst {
+    width: 80px;
+    height: auto;
+    margin-top: -300px; 
+    
+}
+
+.Welkomsbericht {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#373D20, #717744);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1px;
+    margin-bottom: -3%;
+   
+}
+
+.welkom-beschr {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    background: -webkit-linear-gradient(#373D20, #717744);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0%;
+    font-size:15px;
+   
+ 
+}
+
+.container-login{
+    background:linear-gradient(#717744,#373D20);
+    height:60%;
+    margin-top: 5%;
+    position:absolute;
+    justify-content: flex-end;
+    bottom: 0; 
+    width: 100%; 
+    gap: 5px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;  
+    border-bottom-right-radius: 0;
+    
+}
+
+.Begin-nu{
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom:-3%;
+    margin-top: 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size:30px;
+    background: -webkit-linear-gradient(#EFF1ED, #BBBBBB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.login-beschr{
+    text-align: left;
+    padding-left: 10%;
+    padding-top:;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#EFF1ED, #BBBBBB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+}
+
+
+
+
+.login-google{
+    background:white;
+    border-radius: 50px;
+    height:10%;
+    width:70%;
+    margin: 0 auto;
+    box-shadow: none;
+    outline: none; 
+    border: none;
+    margin-top: 10%;
+    display: flex; /* Activeert Flexbox */
+    flex-direction: row; /* Zet de elementen naast elkaar */
+    align-items: center; 
+    justify-content: center; 
+    gap:5%;
+    margin-bottom:-5%;
+}
+
+
+
+
+.Login-email{
+    background:#C9CAC7;
+    border-radius: 50px;
+    height:10%;
+    width:70%;
+    margin: 0 auto;
+    box-shadow: none;
+    outline: none; 
+    border: none;
+    margin-top: 10%;
+    display: flex; /* Activeert Flexbox */
+    flex-direction: row; /* Zet de elementen naast elkaar */
+    align-items: center; 
+    justify-content: center; 
+    gap:5%;
+    
+}
+
+.e-mail-logo, .google-logo{
+    width:30px;
+}
+
+.e-mail-login-beschr, .google-login-beschr{
+    font-family: "montserrat", sans-serif;
+    font-weight: bold;
+    
+}
+
+.gebruiker-kiezen{
+    display:none;
+}
+
+
+
+
+

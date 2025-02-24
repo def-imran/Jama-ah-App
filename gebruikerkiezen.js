@@ -31,3 +31,11 @@ deelnemerKnop.addEventListener("click", function() {
     afbeelding.classList.remove("active");
 
 });
+
+const gaVederknop = document.getElementById("ga-verder-knop");
+
+gaVederknop.addEventListener("click", function(){
+    if (organisatieKnop.classList.contains("active")){
+        window.location.href = "gegevensorganisatie.html";
+    }
+})

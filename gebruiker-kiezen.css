@@ -51,6 +51,7 @@
     border-radius:20px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family:'Montserrat', sans-serif ;
 }
 
 .organisatie-knop.active{
@@ -100,6 +101,7 @@
     border-radius:20px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family:'Montserrat', sans-serif ;
 }
 .deelnemer-icon{
     width:20vw;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>Gebruikerkiezen</title>
+    <link rel="stylesheet" href="gegevensorganisatie.css">
+    <script src="gebruikerkiezen.js" type="module"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-gegevens-organisatie">
+    <div id="container-gegevens-organisatie" class="container-gegevens-organisatie">
+        <h1 id="voer-uw-gegevens-in" class="voer-uw-gegevens-in">Voer uw gegevens in</h1>
+        <form id="account-gegevens-moskee" class="account-gegevens-moskee">
+            <label for="naam-moskee" class="naam-label">Naam Moskee</label>
+            <input type="text" class="form-label" id="naam-moskee" name="naam-moskee" required placeholder="Bijv. “Moskee Hijra”">
+
+            <label for="email-moskee" class="naam-label">E-Mail adres Moskee</label>
+            <input type="email" class="form-label" id="email-moskee" name="email-moskee" required placeholder="Bijv. “iemand@gmail.com”">
+
+            
+            <label for="website-moskee" class="naam-label">Website Moskee</label>
+            <input type="url" class="form-label" id="website-moskee" name="website-moskee" required placeholder="Bijv. “www.voorbeeld.nl”">
+
+            
+            <label for="locatie-moskee" class="naam-label">Locatie Moskee (straat, stad, postcode)</label>
+            <input type="text" class="form-label" id="locatie-moskee" name="locatie-moskee" required placeholder=" straatnaam 123, 1015 CW Amsterdam.">
+        </form>
+        <button id="ga-verder-knop" class="ga-verder-knop">Verder</button>
+    </div>
+</body>

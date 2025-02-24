@@ -1,0 +1,70 @@
+.body-gegevens-organisatie {
+    background-color: #EFF1ED;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    margin-left: 5%;
+ 
+    
+}
+
+.voer-uw-gegevens-in{
+    font-family: "montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+    background: -webkit-linear-gradient(#373D20, #717744);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top:60%;
+    margin-left:5%;
+    
+}
+
+label {
+    display: inline-block; /* Zorgt ervoor dat het label een block-level element wordt */
+    margin-bottom: 5px; /* Voeg ruimte toe onder het label voor duidelijkheid */
+}
+
+input {
+    display: block; /* Zorgt ervoor dat het invoerveld ook onder het label komt */
+    width:auto;/* Laat de invoervelden de volledige breedte van het formulier innemen */
+    margin-bottom: 15px; /* Voeg wat ruimte toe onder elk invoerveld */
+}
+
+.form-label{
+    background: #EFF1ED;
+    border: 0.05em solid #717744;
+    border-radius: 20px;
+    height:30px;
+    color:#373D20;
+    font-style: italic;
+    margin-left: 5%;
+    
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #717744;
+}
+
+.naam-label{
+    font-family: "montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:#373D20;
+    margin-left:5%;
+}
+
+.ga-verder-knop{
+    width:25vw;
+    height:9vw;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #373D20, #717744);
+    border:#717744;
+    font-family:'Montserrat', sans-serif ;
+    color:white;
+    margin-top: 3%;
+    margin-left: 8%;
+
+
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>Gebruikerkiezen</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="events.js" type="module"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="body-events">
+    <div id="container-naam-page" class="container-naam-page">
+        <h1 id="naam-page" class="naam-page">Evenementen</h1>
+        <p id="beschrijving-page" class="beschrijving-page">Bekijk en beheer je geplande evenementen.</p>
+    </div>
+    <div id="evenementen-container" class="evenementen-container">
+        <h1 class="MijnEvenementen">Mijn Evenementen</h1>
+        <p class="geen-evenementen">Je hebt nog geen evenementen aangemaakt</p>
+        <p class="evenementen-cao">Maak snel een evenement aan!</p>
+        <button id="ga-verder-knop" class="ga-verder-knop">Evenement inplannen</button>
+    </div>
+
+    <!-- Popup. bij dit stukje heb ik veel chatgpt gebruikt omdat het onoverzichtelijk was met de divs. Ik moest veel divs toevoegen nadat ik al veel divs had dus toen heb ik het aan chatgpt laten
+     zien hij heeft verbeterd. maar die forms enzo heb ik zelf gemaakt. hij heeft alleen de plek van de divs verbeterd-->
+     <div id="nieuw-evenement-container" class="nieuw-evenement-container">
+        <div id="evenement-popup" class="evenement-popup">
+            <h1 class="nieuw-evenement">Nieuw Evenement</h1>
+            <div id="titel-evenement-container" class="titel-evenement-container">
+                <form id="evenement-titel">
+                    <label for="event-titel" class="event-label"></label>
+                    <input type="text" name="Titel evenement" id="event-titel" class="event-input" required placeholder="Titel evenement">
+                </form>
+            </div>
+            
+            <div id="gegevens-evenement-container1" class="gegevens-evenement-container1">
+                <form id="evenement-gegevens">
+                    <div class="tijd-container">
+                        <label for="start-tijd" class="event-label-klein"></label>
+                        <input type="time" name="tijd evenement" id="start-tijd" class="event-input-klein" required placeholder="Begin Tijd">
+                        <div class="pijl-container">
+                            <span class="arrow">→</span>
+                        </div>
+                        <label for="eind-tijd" class="event-label-klein"></label>
+                        <input type="time" name="tijd evenement" id="eind-tijd" class="event-input-klein" required placeholder="Eind Tijd">
+                    </div>
+                    <div class="form-container">
+                        <label for="datum" class="event-label-groot"></label>
+                        <input type="date" name="datum evenement" id="datum" class="event-input-groot" required placeholder="Datum">
+                    </div>
+                    <div class="form-container">
+                        <label for="spreker" class="event-label-groot"></label>
+                        <div class="spreker-container">
+                            <input type="text" name="spreker evenement" id="spreker" class="event-input-groot" required placeholder="Spreker">
+                            <img class="form-icon" src="afbeeldingen/conference.png" alt="spreker-icon">
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <label for="locatie" class="event-label-groot"></label>
+                        <div class="locatie-container">
+                            <input type="text" name="locatie evenement" id="locatie" class="event-input-groot" required placeholder="Locatie">
+                            <img class="form-icon" src="afbeeldingen/pin.png" alt="spreker-icon">
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
+            <div id="gegevens-evenement-container2" class="gegevens-evenement-container2">
+                <div id="container-upload" class="container-upload">
+                    <div class="form-container-image">
+                        <span class="upload-tekst"> Upload Afbeelding Event</span>
+                        <label for="afbeelding-event" class="upload-knop">
+                            <img id="image-preview-event" class="image-preview" src="" alt="Voorbeeld afbeelding" style="display: none;">
+                            <span class="plus-icon">+</span> 
+                        </label>
+                        <input type="file" name="afbeelding event" id="afbeelding-event" class="event-input-image" accept="image/*">
+                    </div>
+    
+                    <div class="form-container-spreker">
+                        <span class="upload-tekst"> Upload Afbeelding Spreker</span>
+                        <label for="afbeelding-spreker" class="upload-knop">
+                            <img id="image-preview-spreker" class="image-preview" src="" alt="Voorbeeld afbeelding" style="display: none;">
+                            <span class="plus-icon">+</span> 
+                        </label>
+                        <input type="file" name="afbeelding spreker" id="afbeelding-spreker" class="event-input-image" accept="image/*">
+                    </div>
+    
+                    <div class="form-container-beschrijving">
+                        <label for="beschrijving" class="event-label-groot"></label>
+                        <form id="evenement-beschrijving">
+                            <div class="beschrijving-container">
+                                <textarea type="text" name="beschrijving evenement" id="beschrijving" class="event-input-beschrijving" required placeholder="Beschrijving Evenement"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <button id="save-knop" class="ga-verder-knop">Save</button>
+        </div> <!-- Sluit evenement-popup -->
+    </div> <!-- Sluit nieuw-evenement-container -->
+    
+    <!-- Hierbuiten staat de navbar, NIET in de popup -->
+    <div id="navbar" class="navbar">
+        <div id="nav-home" class="nav-item">
+            <img class="nav-icon" src="afbeeldingen/home (1).png" alt="home-icon">
+            <p class="nav-tekst">Home</p>
+        </div>
+        <div id="nav-events" class="nav-item">
+            <img class="nav-icon" src="afbeeldingen/calendar.png" alt="events-icon">
+            <p class="nav-tekst">Events</p>
+        </div>
+        <div id="nav-account" class="nav-item">
+            <img class="nav-icon" src="afbeeldingen/user.png" alt="account-icon">
+            <p class="nav-tekst">Account</p>
+        </div>
+    </div> <!-- Sluit navbar correct af -->
+    
+    </body>
+    </html>
+    
